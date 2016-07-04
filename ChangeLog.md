@@ -10,6 +10,10 @@
 
 ## CHANGES
 
+# 3.3.1.maz.2
+
+## CHANGES
+
 * General: Update to credit_card_validations 3.2.2 for compatibility with Rails 5
 
 # 3.3.0.maz.1
