@@ -1,10 +1,8 @@
 # UNRELEASED
 
-# 3.4.0 (unreleased)
+# 4.x.y
 
 ## BREAKING CHANGES
-
- * Dropped support for 1.9.3
 
 ## DEPRECATION
 
@@ -22,6 +20,22 @@
 
   * Ensure a non-nil error message for invalid emails and phone numbers
 
+# 4.0.1
+
+## CHANGES
+
+  * Handle integer postal codes (@penman)
+
+
+# 4.0.0 (Rails 5 support, major update!)
+
+## BREAKING CHANGES
+
+  * Added support for Rails 5! Big thanks to Ross Penman! (@penman) :tada:
+  * Dropped support for Ruby < 2.2.2
+  * Unping most dependencies
+
+
 # 3.3.0
 
 ## DEPRECATION
@@ -36,6 +50,7 @@
   * README: Details about activating AV w/ Rails
   * Spec: Links to dependency gems for convenience; sorting ; code :sparkles:.
   * General: Loosen up the dependency on countries
+
 
 # 3.2.0
 

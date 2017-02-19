@@ -8,6 +8,19 @@ describe "Phone Validation" do
     TestRecord.new attrs
   end
 
+  describe "when a country is given" do
+    it "allows numbers matching that country" do
+      subject = build_phone_validation(country: :gb)
+      subject.phone = '+441234567890'
+      subject.valid?.must_equal true
+    end
+
+    it "does not allow numbers from other countries" do
+      subject = build_phone_validation(country: :gb)
+      subject.phone = '+19999999999'
+      subject.valid?.must_equal false
+    end
+  end
 
   describe "when no country is given" do
     it 'should validate format of phone with ###-###-####' do
@@ -60,7 +73,9 @@ describe "Phone Validation" do
       subject = build_phone_validation true
       subject.phone = '999'
       subject.valid?.must_equal false
-      subject.errors[:phone].include?(subject.errors.generate_message(:phone, :invalid)).must_equal true
+
+      message = subject.errors.generate_message(:phone, :invalid)
+      subject.errors[:phone].include?(message).must_equal true
     end
   end
 end

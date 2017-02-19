@@ -7,13 +7,13 @@ module ActiveModel
       end
 
       def validate_each(record, attribute, value)
-        begin
-          mail = Mail::Address.new(value)
+        valid = begin
+                  mail = Mail::Address.new(value)
 
-          valid = basic_check(mail) && value.include?(mail.address)
-        rescue Exception => _
-          valid = false
-        end
+                  basic_check(mail) && value.include?(mail.address)
+                rescue Exception => _
+                  false
+                end
 
         if options[:with]
           # technically the test suite will pass without the boolean coercion
