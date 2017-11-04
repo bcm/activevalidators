@@ -8,17 +8,13 @@
 
 ## CHANGES
 
-# 3.3.1.maz.2
+
+# 4.0.2
 
 ## CHANGES
 
-* General: Update to credit_card_validations 3.2.2 for compatibility with Rails 5
+  * Ensure NINO's prefixes are correct (@alyssais).
 
-# 3.3.0.maz.1
-
-## CHANGES
-
-  * Ensure a non-nil error message for invalid emails and phone numbers
 
 # 4.0.1
 
@@ -34,6 +30,20 @@
   * Added support for Rails 5! Big thanks to Ross Penman! (@penman) :tada:
   * Dropped support for Ruby < 2.2.2
   * Unping most dependencies
+
+
+# 3.3.1.maz.2
+
+## CHANGES
+
+* General: Update to credit_card_validations 3.2.2 for compatibility with Rails 5
+
+
+# 3.3.0.maz.1
+
+## CHANGES
+
+  * Ensure a non-nil error message for invalid emails and phone numbers
 
 
 # 3.3.0
