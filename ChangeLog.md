@@ -9,6 +9,13 @@
 ## CHANGES
 
 
+# 4.0.2.maz.1
+
+## CHANGES
+
+* Allow Countries 2.x
+
+
 # 4.0.2
 
 ## CHANGES

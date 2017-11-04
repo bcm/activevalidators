@@ -1,7 +1,7 @@
 # -*- encoding: utf-8 -*-
 Gem::Specification.new do |s|
   s.name        = 'activevalidators'
-  s.version     = '4.0.2'
+  s.version     = '4.0.2.maz.1'
   s.platform    = Gem::Platform::RUBY
   s.authors     = ['Franck Verrot', 'Paco Guzmán', 'Oriol Gual', 'Garrett Bjerkhoel', 'Renato Riccieri Santos Zannon', 'Brian Moseley', 'Serj L aka Loremaster']
   s.email       = ['franck@verrot.fr']
@@ -19,7 +19,7 @@ Gem::Specification.new do |s|
   s.add_dependency 'date_validator'
   s.add_dependency 'activemodel'            , '>= 3.0'
   s.add_dependency 'phony'                  , '~> 2.0'
-  s.add_dependency 'countries'              , '~> 1.2'
+  s.add_dependency 'countries'              , '>= 1.2'
   s.add_dependency 'credit_card_validations', '~> 3.2'
 
   s.files              = `git ls-files`.split("\n")
